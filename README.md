@@ -12,7 +12,11 @@ Total number of vCPUs in an azure region?
 
 A Host pool type cannot be changed from Personal to Pooled or vice-versa
 
-After changing the Private endpoint in a host pool, RDAgent bootloader service must be restarted in the Session hosts for it to take effect. This service restart or session host restart will be needed after reconfiguring hostpool's network configuration.
+Networking:
+- After changing the Private endpoint in a host pool, RDAgent bootloader service must be restarted in the Session hosts for it to take effect. This service restart or session host restart will be needed after reconfiguring hostpool's network configuration.
+- Using Private link and RDP shortpath for managed network is in preview; all other RDP shortpath options using STUN or TURN are not supported with Private link.
+- 
+
 
 
 
